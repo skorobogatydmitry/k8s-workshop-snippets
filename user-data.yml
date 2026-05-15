@@ -1,0 +1,9 @@
+#cloud-config
+ssh_pwauth: true
+users:
+  - name: k8s-admin
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    passwd: $y$j9T$3d9SEOpRl8cnO/k8j1.DS0$v2i2sZXVCmXVs9Zj9H8YOJenoOW4e0SKt9jS41mxHW.
+    lock_passwd: false
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDS7qrHMYxakPCsH32MIzgeNWuBJAw2yh19UOTj+JLukyKwd0As0WsQ9108vFA0vnbU32VpqeXd0NKbq3s2XSQoZ16gw8SLg7sgCVEGglqIJOLnEGAimwloAOF6O1Er0b9SfVYPunYSsSZUjP7cfKYGMJRkQDHAq6/vLUL3SqsGe0U2GLNNHWA4YRrtLppu8bbmTjrm2sWG3IFxhQIbrpkb0ksYV2twMRasMYrgYdTjyOhDMU7yvMj5I9sBHYumyeREoUhpR1IPu488YE0cwBEGRgFt/T/58n4PKcoMLoDJ1KTBx+Ph2J5nOCZYbbpBGNdocuFmQn5sWxd65vE3oVtZZEdQMKVDT1+RehcSOSKNKDXpj+2ZKHCEpqo2OPDMtR3DtXNBRu6jU5zXhijH70KXa7myAuxLNX4zdC9CA+GDZ+/3serYs6WP02Rfhh2xNfR3Lu5NxmVVgQC16BFMbZTlYSx1PhnOPjx19bnyb0JbhmSKw6wP5+XfVC9vg9IplGU= dk
