@@ -1,3 +1,4 @@
+echo '<IP> k8s-api.local' >> /etc/hosts
 cat <<EOF > config.yaml
 apiVersion: kubeadm.k8s.io/v1beta4
 kind: ClusterConfiguration
