@@ -4,7 +4,7 @@ kubectl -n kube-system edit cm/kube-proxy
 kubeadm upgrade plan
 kubeadm upgrade diff
 kubeadm upgrade apply 1.35.X
-kubectl get nodes -o custom-columns='name:.metadata.name,subnet:.spec.podCIDR
+kubectl get nodes -o custom-columns='name:.metadata.name,subnet:.spec.podCIDR'
 kubectl uncordon k8s-node2; kubectl uncordon k8s-node3
 sudo dnf install -y nftables
 kubectl edit -n kube-flannel cm/kube-flannel-cfg
